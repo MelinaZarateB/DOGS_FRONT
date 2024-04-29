@@ -1,0 +1,23 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+  }
+  
+  .content {
+    display: flex;
+    flex: 1; /* Esto permite que el contenido ocupe todo el espacio restante */
+  }
+  
+  .sidebar {
+    flex: 0 0 20%; /* Ancho fijo para la barra lateral (ajusta según tus necesidades) */
+    background-color: #f0f0f0; /* Color de fondo de la barra lateral */
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .cards {
+    flex: 1; /* El contenido de las cards ocupa todo el espacio restante */
+    padding: 20px;
+    overflow-y: auto; /* Añade scroll si el contenido excede el tamaño del contenedor */
+  }

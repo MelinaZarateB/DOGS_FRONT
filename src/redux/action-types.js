@@ -1,0 +1,24 @@
+export const GET_ALL_DOGS = 'GET_ALL_DOGS';
+
+export const FILTER_BY_NAME = 'FILTER_BY_NAME';
+
+export const SET_SHOW_FILTERED = 'SET_SHOW_FILTERED';
+
+export const CLEAN_FILTER_DOG = 'CLEAN_FILTER_DOG';
+
+export const GET_DOGS_BY_ID = 'GET_DOGS_BY_ID';
+
+export const CLEAN_DOGS_BY_ID = 'CLEAN_DOGS_BY_ID';
+
+export const GET_TEMPERAMENTS = 'GET_TEMPERAMENTS';
+
+export const SELECT_DOGS_BY_TEMPERAMENTS = 'SELECT_DOGS_BY_TEMPERAMENTS';
+
+export const ORDER_BY_NAME = 'ORDER_BY_NAME';
+
+export const ORDER_BY_ORIGIN = 'ORDER_BY_ORIGIN';
+
+export const ORDER_BY_WEIGHT = 'ORDER_BY_WEIGHT';
+
+export const POST_DOG = 'POST_DOG';
+
