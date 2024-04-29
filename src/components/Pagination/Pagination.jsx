@@ -59,13 +59,13 @@ const Pagination = ({
             className={styles.button} 
             onClick={onPreviusPage}
             disabled={currentPage === 1}>
-                Anterior
+                Previus
                 </button>
             <button 
             className={styles.button} 
             onClick={onNextPage}
             disabled={currentPage === 22}>
-                Siguiente
+                Next
                 </button>
             </div>
         </div>

@@ -24,7 +24,7 @@
   margin-bottom: 30px;
 }
 .button {
-  background-color: rgb(20, 20, 16);
+  background-color: #323232;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -32,9 +32,10 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 10px;
+  width: 90px;
   
   &:hover {
-  background-color: rgb(238, 201, 99);
+  background-color: #DEBCA6;
   }
   &:disabled {
   background-color: #ccc; // Cambia el color de fondo cuando está deshabilitado
@@ -51,7 +52,7 @@
 }
 
 .isCurrent {
-  background-color: rgb(238, 201, 99);
+  background-color: #DEBCA6;
   color: #000000;
-  border-color: rgb(238, 201, 99);
+  border-color: #DEBCA6;
 }

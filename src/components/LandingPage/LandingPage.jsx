@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import styles from './LandingPage.module.scss'
 import { useNavigate } from 'react-router-dom';
 
-
 const LandingPage = () => {
     const navigate = useNavigate()
     const handleIngresar = (event) => {
@@ -10,16 +9,13 @@ const LandingPage = () => {
         navigate('/home')
     }
     return (
-      <div className={styles.divLading}>
-        <div className={styles.landingItems}>
-          <h1 className={styles.title}>Bienvenido a la APP de DOGS</h1>
-          <p>¡Ingresa para saber más de tus perros y sus características!</p>
-          <Link to='/'>
-            <button 
-            className={styles.landingButton}
+      <div className={`${styles.divLading} container-fluid`}>
+        <div className={`${styles.landingItems} col-9 col-md-5 d-flex justify-content-center align-items-center`}>
+          <h1 className={styles.title}>Welcome to the Dog Breeds APP</h1>
+          <p className={styles.description}>Come in to learn more about your dogs and their characteristics!</p>
+          <Link to='/'  className={styles.landingButton}
             onClick={handleIngresar}>
-                INGRESAR
-                </button>
+                ENTER
           </Link>
         </div>
       </div>

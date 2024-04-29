@@ -1,0 +1,24 @@
+.cardContainer{
+    margin: 15px;
+    transition: transform 0.25s ease-out;
+    height: 450px;
+}
+.cardContainer:hover {
+    transform: scale(1.05);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.cardInfo{
+    height: 170px;
+    font-family: 'Poppins';
+}
+.imgDog{
+    max-height: 200px;
+}
+.linkDetail{
+    text-decoration: none;
+}

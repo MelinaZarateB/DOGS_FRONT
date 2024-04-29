@@ -1,0 +1,27 @@
+.containerForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.containerInput{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.span{
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    color: red;
+}
+.input{
+    border: 1px solid black;
+}
+.messageError{
+    color: red;
+    margin-top: 5px;
+}
+.inputInvalid{
+    border: 1px solid red;
+}

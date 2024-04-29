@@ -22,3 +22,5 @@ export const ORDER_BY_WEIGHT = 'ORDER_BY_WEIGHT';
 
 export const POST_DOG = 'POST_DOG';
 
+export const SHOW_FILTERS_MOBILE = 'SHOW_FILTERS_MOBILE';
+

@@ -9,6 +9,7 @@ import {
     ORDER_BY_ORIGIN,
     ORDER_BY_WEIGHT,
     POST_DOG,
+    SHOW_FILTERS_MOBILE
     } from "./action-types";
 
 
@@ -19,10 +20,17 @@ let initialState = {
     dogDetailExists: false,
     temperaments: [],
     dogsFiltered: [],
-    temperamentFilter: ''
+    temperamentFilter: '',
+    showFiltersMobile: false
 };
 const Reducer = (state = initialState, action) => {
     switch(action.type){
+
+        case SHOW_FILTERS_MOBILE:
+            return{
+                ...state,
+                showFiltersMobile: action.payload
+            }
         case GET_ALL_DOGS:
             return {
                 ...state,

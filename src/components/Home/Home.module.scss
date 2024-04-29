@@ -1,3 +1,8 @@
+.cardsContainer{
+  overflow-x: hidden;
+  position: relative;
+}
+
 .homeContainer {
     display: flex;
     flex-direction: column;

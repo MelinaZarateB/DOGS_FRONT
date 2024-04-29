@@ -3,6 +3,11 @@
     width: auto;
     align-items: center;
     justify-content: center;
+    background-image: url('./../../../assets/306213.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
   }
   
   .form {
@@ -15,9 +20,7 @@
     color: rgb(17, 17, 17);
     font-weight: 700;
     margin-top: 20px;
-    margin-left: 12vw;
     height: fit-content;
-    margin-right: 1.5vw; /* Añade un margen inferior para separar el formulario del select */
     background-color: #f8f8f8;
   }
   

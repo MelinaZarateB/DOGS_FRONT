@@ -2,7 +2,29 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 20px 20px 20px 50px;
+    padding: 20px 20px 20px 20px;
     height: auto;
+    /*justify-content: space-around;*/
+    background-color: #F9F6EF;
     justify-content: space-around;
+}
+/*.parent{
+    display: flex;
+    position: relative;
+}*/
+
+.filterContainer{
+   /* margin-left: 15px;*/
+  /*  margin-top: 15px;*/
+  display: flex;
+    padding-left: 0;
+    /*position: absolute;*/
+    position: relative;
+   /* top:0;
+    left:0;
+    z-index: 9999;*/
+}
+.opaque {
+    transition: all 0.3s ease;
+    opacity: 0.4;
 }

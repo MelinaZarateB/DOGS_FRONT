@@ -1,0 +1,50 @@
+.navContainer{
+    /*background-color: #6e6e6eb6;*/
+    background: linear-gradient(to right, #dfbba4, #DDD0C8 );
+}
+@media screen and (max-width: 991px){
+    .navbarBrand{
+        display: none;
+    }
+}
+.collapseNavbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+.imgHuella{
+    width: 70px;
+    height: 70px;
+}
+.link{
+    text-decoration: none;
+}
+.spanItem{
+    color: black;
+    font-weight: 500;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: color 0.5s;
+}
+.spanItem:hover{
+    color: white;
+    
+}
+.spanItem::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.spanItem:hover::after{
+    transform: scaleX(1);
+
+}
