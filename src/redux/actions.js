@@ -1,3 +1,4 @@
+
 import { 
     GET_ALL_DOGS, 
     FILTER_BY_NAME,  
@@ -26,7 +27,7 @@ export const getAllDogs = () => {
     return async (dispatch) => {
         try{
              //const { data } = await axios.get('http://localhost:3001/dogs/');
-             const { data } = await axios.get('https://dogsback-production-da23.up.railway.app//dogs/');
+             const { data } = await axios.get('https://dogsback-production-da23.up.railway.app/dogs/');
             return dispatch({
                 type: GET_ALL_DOGS,
                 payload: data
@@ -156,4 +157,5 @@ export const postDog = (createDog) => {
         }
     }
 }
+
 
