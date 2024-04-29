@@ -9,21 +9,34 @@ import {
     ORDER_BY_NAME,
     ORDER_BY_ORIGIN,
     ORDER_BY_WEIGHT,
-    POST_DOG } from "./action-types";
+    POST_DOG,
+    SHOW_FILTERS_MOBILE
+} from "./action-types";
 import axios from "axios";
+import Swal from 'sweetalert2'
 
+export const showFiltersMobile = (boolean) => {
+    return({
+        type: SHOW_FILTERS_MOBILE,
+        payload: boolean
+    })
+
+}
 export const getAllDogs = () => {
     return async (dispatch) => {
         try{
-            //const { data } = await axios.get('http://localhost:3001/dogs/');
-            const { data } = await axios.get('https://dogsback-production-da23.up.railway.app//dogs/');
-            https://dogsback-production-da23.up.railway.app/
+             //const { data } = await axios.get('http://localhost:3001/dogs/');
+             const { data } = await axios.get('https://dogsback-production-da23.up.railway.app//dogs/');
             return dispatch({
                 type: GET_ALL_DOGS,
                 payload: data
             });
         } catch(err) {
-            alert({'Error al cargar las razas': err})
+            Swal.fire({
+                icon: 'error',
+                title: 'Error al cargar las razas',
+                text: err,
+            })
         };
     };
 };
@@ -31,8 +44,8 @@ export const filterByName = (name) => {
     console.log(name)
     return async (dispatch) => {
         try{
-            //const { data } = await axios.get(`http://localhost:3001/dogs/name?name=${name}`)
-            const { data } = await axios.get(`https://dogsback-production-da23.up.railway.app/dogs/name?name=${name}`)
+              //const { data } = await axios.get(`http://localhost:3001/dogs/name?name=${name}`)
+              const { data } = await axios.get(`https://dogsback-production-da23.up.railway.app/dogs/name?name=${name}`)
             console.log(data)
             return dispatch({
                 type: FILTER_BY_NAME,
@@ -54,8 +67,8 @@ export const cleanFilterDogByName = () => {
 export const getDogsById = (id) => {
     return async (dispatch) => {
         try{
-            //const { data } = await axios.get(`http://localhost:3001/dogs/${id}`)
-            const { data } = await axios.get(`https://dogsback-production-da23.up.railway.app/dogs/${id}`)
+             //const { data } = await axios.get(`http://localhost:3001/dogs/${id}`)
+             const { data } = await axios.get(`https://dogsback-production-da23.up.railway.app/dogs/${id}`)
             console.log(data)
             return dispatch({
                 type: GET_DOGS_BY_ID,
@@ -118,19 +131,29 @@ export const orderByWeight = (order) => {
 }
 
 export const postDog = (createDog) => {
-   // const endpoint= 'http://localhost:3001/dogs';
+    // const endpoint= 'http://localhost:3001/dogs';
     const endpoint= 'https://dogsback-production-da23.up.railway.app/dogs';
     console.log(createDog.temperament)
     return async (dispatch) => {
         try{
          const dogCreated = await axios.post(endpoint,createDog)
-        alert(dogCreated.data.success)
+         Swal.fire({
+            icon: 'success',
+            title: dogCreated.data.success,
+            showConfirmButton: false,
+            timer: 2000
+         })
         return dispatch({
             type: POST_DOG,
             payload: createDog
         })
         }catch(err){
-            alert(err.response.data)
+            Swal.fire({
+                icon: 'error',
+                title: err.response.data,
+                text: 'Retry!'
+            })
         }
     }
 }
+
