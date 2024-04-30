@@ -1,4 +1,3 @@
-
 import { 
     GET_ALL_DOGS, 
     FILTER_BY_NAME,  
@@ -27,7 +26,7 @@ export const getAllDogs = () => {
     return async (dispatch) => {
         try{
              //const { data } = await axios.get('http://localhost:3001/dogs/');
-             const { data } = await axios.get('https://dogsback-production-da23.up.railway.app/dogs/');
+             const { data } = await axios.get('https://dogs-back-pm16.onrender.com/dogs/');
             return dispatch({
                 type: GET_ALL_DOGS,
                 payload: data
@@ -46,7 +45,7 @@ export const filterByName = (name) => {
     return async (dispatch) => {
         try{
               //const { data } = await axios.get(`http://localhost:3001/dogs/name?name=${name}`)
-              const { data } = await axios.get(`https://dogsback-production-da23.up.railway.app/dogs/name?name=${name}`)
+              const { data } = await axios.get(`https://dogs-back-pm16.onrender.com/dogs/name?name=${name}`)
             console.log(data)
             return dispatch({
                 type: FILTER_BY_NAME,
@@ -69,7 +68,7 @@ export const getDogsById = (id) => {
     return async (dispatch) => {
         try{
              //const { data } = await axios.get(`http://localhost:3001/dogs/${id}`)
-             const { data } = await axios.get(`https://dogsback-production-da23.up.railway.app/dogs/${id}`)
+             const { data } = await axios.get(`https://dogs-back-pm16.onrender.com/dogs/${id}`)
             console.log(data)
             return dispatch({
                 type: GET_DOGS_BY_ID,
@@ -92,7 +91,7 @@ export const getTemperaments = () => {
     return async (dispatch) => {
         try{
             //const { data } = await axios.get('http://localhost:3001/temperaments') 
-            const { data } = await axios.get('https://dogsback-production-da23.up.railway.app/temperaments') 
+            const { data } = await axios.get('https://dogs-back-pm16.onrender.com/temperaments') 
             const temperaments= await data.map((temperament) => temperament.name)
             return dispatch ({
                 type: GET_TEMPERAMENTS,
@@ -133,7 +132,7 @@ export const orderByWeight = (order) => {
 
 export const postDog = (createDog) => {
     // const endpoint= 'http://localhost:3001/dogs';
-    const endpoint= 'https://dogsback-production-da23.up.railway.app/dogs';
+    const endpoint= 'https://dogs-back-pm16.onrender.com/dogs';
     console.log(createDog.temperament)
     return async (dispatch) => {
         try{
