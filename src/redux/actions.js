@@ -26,7 +26,7 @@ export const getAllDogs = () => {
     return async (dispatch) => {
         try{
              //const { data } = await axios.get('http://localhost:3001/dogs/');
-             const { data } = await axios.get('https://dogs-back-uf04.onrender.com/dogs/');
+             const { data } = await axios.get('https://dogs-back-uf04.onrender.com/dogs');
             return dispatch({
                 type: GET_ALL_DOGS,
                 payload: data
