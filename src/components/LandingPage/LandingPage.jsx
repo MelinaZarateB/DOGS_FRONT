@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import styles from './LandingPage.module.scss'
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { getAllDogs } from '../../redux/actions';
+import { useDispatch } from 'react-redux';
 
 const LandingPage = () => {
     const navigate = useNavigate()
@@ -8,6 +11,11 @@ const LandingPage = () => {
         event.preventDefault()
         navigate('/home')
     }
+    const dispatch = useDispatch()
+    useEffect(() => {
+      dispatch(getAllDogs())
+    },[])
+    
     return (
       <div className={`${styles.divLading} container-fluid`}>
         <div className={`${styles.landingItems} col-9 col-md-5 d-flex justify-content-center align-items-center`}>
