@@ -10,7 +10,7 @@ import style from './Home.module.scss'
 
 
     useEffect(() => {
-        dispatch(getTemperaments())
+       // dispatch(getTemperaments())
         
     },[showFiltersMobile])
 

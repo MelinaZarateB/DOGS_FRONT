@@ -14,6 +14,7 @@ const LandingPage = () => {
     const dispatch = useDispatch()
     useEffect(() => {
       dispatch(getAllDogs())
+      dispatch(getTemperaments())
     },[])
     
     return (
