@@ -94,7 +94,8 @@ export const getTemperaments = () => {
             //const { data } = await axios.get('http://localhost:3001/temperaments') 
             
            // console.log(data)
-            const { data } = await axios.get('https://dogs-back-uf04.onrender.com/temperaments') 
+            const response = await fetch('https://dogs-back-uf04.onrender.com/temperaments') 
+            const data = await response.json()
             const temperaments= await data.map((temperament) => temperament.name)
             return dispatch ({
                 type: GET_TEMPERAMENTS,
