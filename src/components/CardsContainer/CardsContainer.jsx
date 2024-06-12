@@ -33,8 +33,7 @@ const CardsContainer = () => {
         <div className={`col-2 ${styles.filterContainer}`}>
           <FilterOrder2/>
         </div> 
-      <div className={`col-10 ${styles.cardsContainer}`}>
-        <div className={`${showFiltersMobile ? styles.opaque : ''}`}>
+      <div className={`col-10 ${styles.cardsContainer} ${showFiltersMobile ? styles.opaque : ''}`}>
           {dogFiltered?.map((dog) => ( 
              <Card2
              key={dog.id} 
@@ -44,7 +43,6 @@ const CardsContainer = () => {
              temperament={dog.temperament} 
              weight={dog.weight} />
           )).slice(firstIndex, lastIndex)}
-        </div>
       </div>
     </div>
       <div>
