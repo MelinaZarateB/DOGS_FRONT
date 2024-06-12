@@ -2,8 +2,9 @@ import { Link } from 'react-router-dom';
 import styles from './LandingPage.module.scss'
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
-import { getAllDogs } from '../../redux/actions';
+import { getAllDogs, getTemperaments } from '../../redux/actions';
 import { useDispatch } from 'react-redux';
+
 
 const LandingPage = () => {
     const navigate = useNavigate()
