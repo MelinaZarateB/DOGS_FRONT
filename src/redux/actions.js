@@ -25,7 +25,7 @@ export const showFiltersMobile = (boolean) => {
 export const getAllDogs = () => {
     return async (dispatch) => {
         try{
-             //const { data } = await axios.get('http://localhost:3001/dogs/');
+            // const { data } = await axios.get('http://localhost:3001/dogs/');
              const response = await fetch('https://dogs-back-uf04.onrender.com/dogs');
              const data = await response.json()
             return dispatch({
@@ -96,7 +96,7 @@ export const getTemperaments = () => {
            // console.log(data)
             const response = await fetch('https://dogs-back-uf04.onrender.com/temperaments') 
             const data = await response.json()
-            const temperaments= await data.map((temperament) => temperament.name)
+            const temperaments = await data.map((temperament) => temperament.name)
             return dispatch ({
                 type: GET_TEMPERAMENTS,
                 payload: temperaments

@@ -3,7 +3,7 @@ import validations from "../utils/validations";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getTemperaments, postDog } from "./../../redux/actions";
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 
 const Form2 = () => {
   const temperaments = useSelector((state) => state.temperaments);
