@@ -1,6 +1,6 @@
 .navContainer{
-    /*background-color: #6e6e6eb6;*/
-    background: linear-gradient(to right, #dfbba4, #DDD0C8 );
+    background-color: #CAA488;
+    /*background: linear-gradient(to right, #dfbba4, #DDD0C8 );*/
 }
 @media screen and (max-width: 991px){
     .navbarBrand{
