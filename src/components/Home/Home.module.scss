@@ -1,28 +1,24 @@
+.sectionContainer{
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+@media screen and (width < 1026px){
+  .sectionContainer{
+    grid-template-columns: 1fr;
+  }
+  
+}
 .cardsContainer{
   overflow-x: hidden;
   position: relative;
+  transition: opacity 0.3s ease;
 }
-
-.homeContainer {
-    display: flex;
-    flex-direction: column;
-    height: 100vh; /* Ajusta la altura según tus necesidades */
-  }
-  
-  .content {
-    display: flex;
-    flex: 1; /* Esto permite que el contenido ocupe todo el espacio restante */
-  }
-  
-  .sidebar {
-    flex: 0 0 20%; /* Ancho fijo para la barra lateral (ajusta según tus necesidades) */
-    background-color: #f0f0f0; /* Color de fondo de la barra lateral */
-    padding: 20px;
-    width: 300px;
-  }
-  
-  .cards {
-    flex: 1; /* El contenido de las cards ocupa todo el espacio restante */
-    padding: 20px;
-    overflow-y: auto; /* Añade scroll si el contenido excede el tamaño del contenedor */
-  }
+.opaque {
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .6);
+}

@@ -54,11 +54,11 @@
 }
 .buttonMobile:hover{
     .sidebarTransition{
-        transition: width 0.3s ease;
         width: 300px;
     }
     .sidebarVisible{
         width: 0;
+
     }
 }
 
@@ -74,4 +74,8 @@
   position: fixed;
   align-content: flex-start;
   transition: width 0.3s ease;
+}
+.sidebarHidden{
+  transition: width 0.3s ease;
+  width: 0; 
 }

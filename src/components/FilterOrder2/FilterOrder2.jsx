@@ -33,7 +33,7 @@ const FilterOrder2 = () => {
             onClick={desplegarBarra}
             className={`btn btn-primary ${style.button}`}
           >
-            Filtros
+            Filters
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -58,7 +58,7 @@ const FilterOrder2 = () => {
         )}
         <section
           className={`${style.sidebarTransition} ${
-            barraLateral ? style.sidebarVisible : ""
+            barraLateral ? style.sidebarVisible : style
           }`}
         >
           {barraLateral && (

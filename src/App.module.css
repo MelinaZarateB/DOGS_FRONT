@@ -1,5 +1,6 @@
 .containerApp{
     overflow-y: hidden;
     overflow-x: hidden;
-    background-color: #F9F6EF;
+    /*background-color: #F9F6EF;*/
+    background: linear-gradient(to bottom, #F9F6EF, #f9f9f9 );
 }
