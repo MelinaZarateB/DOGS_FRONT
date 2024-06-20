@@ -1,8 +1,9 @@
-import CardsContainer from "../CardsContainer/CardsContainer";
-import { useEffect } from "react";
 import { useSelector } from "react-redux";
-import FilterOrder2 from "../FilterOrder2/FilterOrder2";
 import style from "./Home.module.scss";
+import React, { useEffect, Suspense } from "react";
+
+const FilterOrder2 = React.lazy(() => import("../FilterOrder2/FilterOrder2"));
+const CardsContainer = React.lazy(() => import("../CardsContainer/CardsContainer"));
 
 const Home = () => {
   const showFiltersMobile = useSelector((state) => state.showFiltersMobile);

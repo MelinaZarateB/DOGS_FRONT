@@ -13,8 +13,8 @@ const Card2 = ({ id, image, name, temperament, weight }) => {
         <div className={`card-body ${style.card}`}>
             <div className={style.cardInfo}>
           <h5 className="card-title">{name}</h5>
-          <p className="card-text">Temperamentos: {temperament}</p>
-          <p>Peso: {weight} kg</p>
+          <p className="card-text">Temperaments: {temperament}</p>
+          <p>Weight: {weight} kg</p>
             </div>
           <div>
           <Link to={`/detail/${id}`} className={style.linkDetail}>

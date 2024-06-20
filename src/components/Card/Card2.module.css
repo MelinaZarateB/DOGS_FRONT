@@ -1,7 +1,7 @@
 .cardContainer{
     margin: 15px;
     transition: transform 0.25s ease-out;
-    height: 450px;
+    max-height: 500px;
 }
 .cardContainer:hover {
     transform: scale(1.05);

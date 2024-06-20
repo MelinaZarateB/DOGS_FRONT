@@ -1,12 +1,11 @@
 import {
   selectDogsByTemperaments,
-  getAllDogs,
   orderByName,
   orderByOrigin,
   orderByWeight,
 } from "./../../redux/actions";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styles from "./FilterOrder.module.css";
 
 const FilterOrder = () => {

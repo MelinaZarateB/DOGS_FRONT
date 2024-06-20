@@ -1,8 +1,10 @@
 .containerForm{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
     margin-top: 40px;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: hidden;
 }
 .containerInput{
     position: relative;

@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllDogs } from "../../redux/actions";
 import Pagination from "../Pagination/Pagination";
 import styles from "../CardsContainer/Cards.module.scss";
-import FilterOrder2 from "../FilterOrder2/FilterOrder2";
 
 const Card2 = React.lazy(() => import("../Card/Card2"));
 
