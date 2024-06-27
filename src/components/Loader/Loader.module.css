@@ -1,0 +1,15 @@
+.loaderContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    margin: 0 auto;
+    padding: 20px 20px 20px 20px;
+}
+
+@media screen and (width < 700px){
+    .loaderContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+}
