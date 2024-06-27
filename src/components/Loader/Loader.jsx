@@ -3,6 +3,7 @@ import ContentLoader from "react-content-loader";
 import style from "./Loader.module.css";
 
 const MyLoader = (props) => {
+
   return (
     <div className={style.loaderContainer}>
       <ContentLoader
