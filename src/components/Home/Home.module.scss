@@ -8,6 +8,11 @@
   }
   
 }
+.containerParent{
+  display: flex;
+  flex-direction: column;
+  height: vh;
+}
 .cardsContainer{
   overflow-x: hidden;
   position: relative;

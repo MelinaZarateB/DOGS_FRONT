@@ -1,6 +1,10 @@
 .navContainer{
-    background-color: #CAA488;
     /*background: linear-gradient(to right, #dfbba4, #DDD0C8 );*/
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 9;
 }
 @media screen and (max-width: 991px){
     .navbarBrand{
@@ -14,14 +18,15 @@
     padding: 1.5rem;
 }
 .imgHuella{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
+    color: #f0d8b8;
 }
 .link{
     text-decoration: none;
 }
 .spanItem{
-    color: black;
+    color: #e1b175;
     font-weight: 500;
     position: relative;
     margin-left: 20px;
@@ -29,7 +34,7 @@
     transition: color 0.5s;
 }
 .spanItem:hover{
-    color: white;
+    color: #e1b175;
     
 }
 .spanItem::after{
@@ -39,7 +44,7 @@
     bottom: -1px;
     width: 100%;
     height: 3px;
-    background-color: white;
+    background-color: #e1b175;
     border-radius: 5px;
     transform: scaleX(0);
     transition: transform .5s;

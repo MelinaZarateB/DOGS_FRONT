@@ -1,8 +1,15 @@
 .formContainer{
     padding: 24px;
 }
+.button{
+    background-color: #f5f3f0;
+    color: black;
+    border-color: transparent
+}
 .button:hover{
-    background-color: #323232;
-    border-color: #00DD00;
-
+    background-color: #c46b32;
+    border-color: transparent;
+}
+input:active{
+    border-color: #c46b32;
 }

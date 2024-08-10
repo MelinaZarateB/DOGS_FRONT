@@ -34,16 +34,16 @@ const DetailDog = () => {
             <br />
             <div className="d-flex">
             <IoPaw className={style.huella}/>
-            <h5 className={style.caracteristica}>Altura: {dogDetailById.height.metric} cm</h5>
+            <h5 className={style.caracteristica}>Height: {dogDetailById.height.metric} cm</h5>
             </div>
             <div className="d-flex">
             <IoPaw className={style.huella}/>
-            <h5 className={style.caracteristica}>Peso: {dogDetailById.weight.metric} kg</h5>
+            <h5 className={style.caracteristica}>Weight: {dogDetailById.weight.metric} kg</h5>
             </div>
             <div>
             <div className="d-flex">
             <IoPaw className={style.huella}/>
-            <h5>Temperamentos: </h5>
+            <h5>Temperaments: </h5>
                 </div>
             <div className={style.temperaments}>
               <ul>
@@ -55,7 +55,7 @@ const DetailDog = () => {
             </div>
             <div className="d-flex">
             <IoPaw className={style.huella}/>
-            <h5 className={style.caracteristica}>Años de vida: {dogDetailById.life_span}</h5>
+            <h5 className={style.caracteristica}>Years: {dogDetailById.life_span}</h5>
             </div>
         </div>
     </div>

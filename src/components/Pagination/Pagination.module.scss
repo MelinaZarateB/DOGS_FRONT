@@ -35,7 +35,7 @@
   width: 90px;
   
   &:hover {
-  background-color: #DEBCA6;
+  background-color: #e1b175;
   }
   &:disabled {
   background-color: #ccc; // Cambia el color de fondo cuando está deshabilitado
@@ -52,7 +52,7 @@
 }
 
 .isCurrent {
-  background-color: #DEBCA6;
+  background-color: #e1b175;
   color: #000000;
-  border-color: #DEBCA6;
+  border-color: #e1b175;
 }

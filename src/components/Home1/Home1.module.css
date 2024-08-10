@@ -1,0 +1,42 @@
+.section1 {
+  height: 70vh;
+  background-image: url("./dogsFondo.png");
+  background-repeat: no-repeat;
+  background-position: initial;
+  background-size: cover;
+  opacity: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container1 {
+  display: flex;
+  color: #e1b175;
+  align-items: center;
+  justify-content: center;
+  gap:60px;
+  font-weight: 600;
+}
+.p{
+    color: white;
+    margin: 0;
+    margin-bottom: 3px;
+}
+.select{
+    width: 300px;
+    cursor: pointer;
+}
+@media screen and (width < 819px) {
+    .container1{
+        flex-direction: column;
+        gap: 0;
+    }
+    
+}
+@media screen and (width < 580px) {
+    .select{
+        width: 90vw;
+        
+    }
+    
+}

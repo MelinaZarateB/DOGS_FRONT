@@ -7,24 +7,26 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import style from './../src/App.module.css';
 import { Suspense } from 'react';
 import React from 'react';
-
+import Home1 from './components/Home1/Home1';
 const Form2 = React.lazy(() => import('./components/Form2/Form2'));
 const Home = React.lazy(() => import('./components/Home/Home'));
 const NavBar2 = React.lazy(() => import('./components/NavBar/NavBar2'));
 const DetailDog = React.lazy(() => import('./components/DetailDog/DetailDog'));
+import { getAllDogs } from './redux/actions';
+import { useDispatch } from "react-redux";
+import { useEffect } from 'react';
 
 function App() {
-  const { pathname } = useLocation()
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(getAllDogs())
+  }, []);
+
   return (
     <div className={style.containerApp}>
-    { pathname !== '/' && 
-    <Suspense fallback={null}>
       <NavBar2 />
-    </Suspense>
-    }
     <Routes>
-      <Route path='/' element={<LandingPage />} />
-      <Route path='/home' element={
+      <Route path='/' element={
         <Suspense fallback={null}>
           <Home />
         </Suspense>

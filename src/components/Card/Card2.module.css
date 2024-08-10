@@ -17,7 +17,8 @@
     font-family: 'Poppins';
 }
 .imgDog{
-    max-height: 200px;
+    height: 200px;
+    
 }
 .linkDetail{
     text-decoration: none;

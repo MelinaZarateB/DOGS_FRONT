@@ -14,10 +14,6 @@ const FilterOrder = () => {
   const temperaments = useSelector((state) => state.temperaments);
 
   /* Handlers para filtros y ordenamiento */
-  const handlerFilterTemperament = (event) => {
-    event.preventDefault();
-    dispatch(selectDogsByTemperaments(event.target.value));
-  };
   /* Handler para ordenar por nombre*/
   const handlerOrderByName = (event) => {
     event.preventDefault();
@@ -36,23 +32,9 @@ const FilterOrder = () => {
     <>
           <div className={styles.containerOptions}>
             <br />
-            <p className={styles.title}>Filtering options:</p>
+            <p className={styles.title}>Order options:</p>
             <br />
             <div className={styles.containerSelects}>
-            <select
-              className={`form-select aria-label="Default select example ${styles.select}`}
-              onChange={handlerFilterTemperament}
-            >
-              <option disabled>Temperaments</option>
-              <option value="all" className={styles.option}>
-              All temperaments
-              </option>
-              {temperaments?.map((temp, index) => (
-                <option key={index} value={temp} className={styles.option}>
-                  {temp}
-                </option>
-              ))}
-            </select>
             <select className={`form-select aria-label="Default select example ${styles.select}`} onChange={handlerOrderByName}>
               <option>Sort by name</option>
               <option value="A-Z" className={styles.option}>

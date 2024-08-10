@@ -18,7 +18,7 @@ const Card2 = ({ id, image, name, temperament, weight }) => {
             </div>
           <div>
           <Link to={`/detail/${id}`} className={style.linkDetail}>
-            <span className="btn btn-success">More info</span>
+            <span className="btn btn-success" style={{backgroundColor: '#e1b175', borderColor: '#e1b175'}}>More info</span>
           </Link>
         </div>
           </div>
