@@ -73,7 +73,7 @@ const Form2 = () => {
   return (
     <>
       <div className={styles.containerForm}>
-        <form className="container row g-3 justify-content-center">
+        <form className={`container row g-3 justify-content-center ${styles.form}`}>
           <div className="d-flex justify-content-center">
             <h2 style={{fontFamily:'Poppins', marginBottom: '15px'}}>Complete the fields and create a new race!</h2>
           </div>

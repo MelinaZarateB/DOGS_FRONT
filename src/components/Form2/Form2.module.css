@@ -6,7 +6,6 @@
     overflow-y: hidden;
     height: 100vh;
     align-items: center;
-   
 }
 .containerInput{
     position: relative;
@@ -28,4 +27,10 @@
 }
 .inputInvalid{
     border: 1px solid red;
+}
+@media screen and (width < 768px) {
+    .form{
+        margin-top: 400px;
+    }
+    
 }
