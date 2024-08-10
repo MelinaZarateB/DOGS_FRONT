@@ -9,7 +9,7 @@ const Home = React.lazy(() => import('./components/Home/Home'));
 const NavBar2 = React.lazy(() => import('./components/NavBar/NavBar2'));
 const DetailDog = React.lazy(() => import('./components/DetailDog/DetailDog'));
 import Footer from './components/Footer /Footer';
-import { getAllDogs } from './redux/actions';
+import { getAllDogs, getTemperaments } from './redux/actions';
 import { useDispatch } from "react-redux";
 import { useEffect } from 'react';
 
@@ -18,6 +18,7 @@ function App() {
 
   useEffect(() => {
     dispatch(getAllDogs())
+    dispatch(getTemperaments())
   }, []);
 
   return (

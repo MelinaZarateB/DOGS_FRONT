@@ -13,10 +13,6 @@ const Home = () => {
   const showFiltersMobile = useSelector((state) => state.showFiltersMobile);
   const dispatch = useDispatch()
 
-  useEffect(() => {
-    dispatch(getAllDogs())
-  }, [showFiltersMobile]);
-
   return (
     <>
     <section className={style.containerParent}>

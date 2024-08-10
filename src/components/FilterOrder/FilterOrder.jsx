@@ -1,5 +1,4 @@
 import {
-  selectDogsByTemperaments,
   orderByName,
   orderByOrigin,
   orderByWeight,
@@ -9,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 import styles from "./FilterOrder.module.css";
 
 const FilterOrder = () => {
-  const navigate = useNavigate();
   const dispatch = useDispatch();
   const temperaments = useSelector((state) => state.temperaments);
 
